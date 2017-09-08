@@ -1,0 +1,24 @@
+{
+  "name": "gamesaleshub",
+  "version": "1.0.0",
+  "description": "bojian&zhida'work",
+  "main": "Hello.js",
+  "dependencies": {
+    "crawler": "^1.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "hello world!"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com:lzd931201/GameSalesHubServer"
+  },
+  "keywords": [
+    "for",
+    "game",
+    "lover"
+  ],
+  "author": "Zhida&Bojian",
+  "license": "ISC"
+}
