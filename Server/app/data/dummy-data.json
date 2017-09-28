@@ -1,0 +1,15 @@
+{
+    "games": [{
+        "title": "Persona 5",
+        "vendor": "Atlas",
+        "language": ["Japanese", "Chinese Traditional", "English"],
+        "platform": ["PS4"],
+        "releaseDate": "September 15, 2016"
+     },{
+        "title": "Gravity Daze 2",
+        "vendor": "SCE Japan",
+        "language": ["Japanese", "Chinese Traditional",  "English"],
+        "platform": ["PS4"],
+        "releaseDate": "January 18, 2017"
+    }]
+}

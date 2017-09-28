@@ -2,12 +2,13 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/', function(request, response, next) {
-  response.send(`
-        <html>
-        <h1>Game Sales Hub</h1>
-        </html>
-    `);
-  next();
+    var dummyData = request.app.get('dummyData');
+    var gameData = dummyData.games;
+    response.render('index', {
+       'gameData': gameData,
+       'pageTitle': 'Index'
+    });
+    //next();
 });
 
 module.exports = router;
