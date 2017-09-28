@@ -2,13 +2,17 @@
   "name": "gamesaleshub",
   "version": "1.0.0",
   "description": "bojian&zhida'work",
-  "main": "Hello.js",
+  "main": "app/Hello.js",
   "dependencies": {
-    "crawler": "^1.0.5"
+    "crawler": "^1.0.5",
+    "ejs": "^2.5.7",
+    "express": "^4.15.5",
+    "nodemon": "^1.12.1"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "hello world!"
+    "test": "hello world!",
+    "dev": "nodemon app/app.js"
   },
   "repository": {
     "type": "git",
