@@ -1,10 +1,12 @@
 var express = require('express');
 var app = express();
 var dummyData = require('./data/dummy-data.json');
+var path = require('path');
+var appAbsPath = path.resolve(__dirname);
 
 app.set('port', process.env.PORT || 3000);
 app.set('view engine', 'ejs');
-app.set('views', 'app/views');
+app.set('views', appAbsPath + '/views');
 app.set('dummyData', dummyData);
 
 app.use(express.static('app/public'));
