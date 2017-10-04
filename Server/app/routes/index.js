@@ -8,7 +8,8 @@ router.get('/', function(request, response, next) {
     //    'gameData': gameData,
     //    'pageTitle': 'Index'
     // });
-    response.sendFile(request.app.get('views') + '/index.html');
+    console.log('index.html sent');
+    response.sendFile('/index.html');
     //response.json({'Title': 'Game Sales Hub - Index'});
     //next();
 });

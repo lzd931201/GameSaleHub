@@ -6,24 +6,27 @@
     <meta name="description" content="">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
     <title>Game Sales Hub - Index</title>
-    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,700'>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,700">
     <!-- <link rel="stylesheet" href="/stylesheets/angular-material.css"/> -->
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+    <link rel="stylesheet" href="/stylesheets/index.css">
     <!-- Latest compiled and minified CSS -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
 </head>
-<body layout="column" ng-app="GameSalesHubIndex" ng-cloak>
+<body layout="column" ng-app="GameSalesHubIndex" ng-cloak ng-controller="IndexCtrl as index">
     <md-toolbar layout="row" class="md-toolbar-tools">
         <md-button class="menu md-icon-button"
                    aria-label="Show User List">
           <md-icon md-svg-icon="/images/icons/menu.svg"></md-icon>
         </md-button>
-        <div ng-controller="IndexCtrl as index">
+        <div>
             <h1>{{index.message}}</h1>
         </div>
     </md-toolbar>
-        <div class="container" layout="row" flex>
-        <md-sidenav md-is-locked-open="true" class="md-whiteframe-4dp">
+
+    <div class="container" layout="row" flex>
+
+        <md-sidenav md-is-locked-open="$mdMedia('gt-sm')" class="md-whiteframe-4dp">
             <div class="container" layout="grid">
                 <md-list-item>
                     <md-button aria-label="button 1">
@@ -33,7 +36,20 @@
             </div>
         </md-sidenav>
         <md-content id="content" flex>
-            Content
+            <div class='md-padding' layout="row" layout-wrap>
+                 <ng-include src="'/partials/game-card.html'" flex flex-gt-xs="100" layout="row" layout-sm="column" layout-wrap>
+                 <!-- <md-card flex flex-gt-xs="20" ng-repeat="game in index.games">
+                     <img src="http://placehold.it/150x150" class="md-card-image">
+                    <md-card-content>
+                      <h2>{{game.title}}</h2>
+                      <p>{{game.vendor}}</p>
+                    </md-card-content>
+                    <div class="md-actions" layout="row" layout-align="end center">
+                      <md-button>Save</md-button>
+                      <md-button>View</md-button>
+                    </div>
+                 </md-card> -->
+            </div>
         </md-content>
     </div>
 
@@ -47,6 +63,8 @@
 <script src="/javascripts/lib/angular-animate.js"></script> -->
 <!-- Angular Material requires Angular.js Libraries -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-route.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-messages.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-animate.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-aria.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-messages.min.js"></script>

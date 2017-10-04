@@ -1,15 +1,45 @@
 {
     "games": [{
         "title": "Persona 5",
-        "vendor": "Atlas",
+        "developer": "Atlas",
         "language": ["Japanese", "Chinese Traditional", "English"],
         "platform": ["PS4"],
         "releaseDate": "September 15, 2016"
-     },{
+        }, {
         "title": "Gravity Daze 2",
-        "vendor": "SCE Japan",
+        "developer": "SCE Japan",
         "language": ["Japanese", "Chinese Traditional",  "English"],
         "platform": ["PS4"],
         "releaseDate": "January 18, 2017"
-    }]
+        }, {
+        "title": "Uncharted 4",
+        "developer": "Naughty Dog",
+        "language": ["English", "Chinese Traditional", "Chinese Simplified", "Japanese"],
+        "platform": ["PS4"],
+        "releaseDate": "May 10, 2016"
+        }, {
+        "title": "Yakuza 6: The Song of Life",
+        "developer": "Sega",
+        "language": ["Japanese", "Chinese Traditional", "English"],
+        "platform": ["PS4"],
+        "releaseDate": "December 8, 2016"
+        }, {
+        "title": "Bloodborne",
+        "developer": "FromSoftware",
+        "language": ["Japanese", "Chinese Traditional", "Chinese Simplified", "English"],
+        "platform": ["PS4"],
+        "releaseDate": "March 24, 2015"
+        }, {
+        "title": "Dark Souls III",
+        "developer": "FromSoftware",
+        "language": ["Japanese", "Chinese Traditional", "Chinese Simplified", "English"],
+        "platform": ["PS4"],
+        "releaseDate": "March 24, 2016"
+        }, {
+        "title": "Nier: Automata",
+        "developer": "PlatinumGames",
+        "language": ["Japanese", "Chinese Traditional", "Chinese Simplified", "English"],
+        "platform": ["PS4", "Windows"],
+        "releaseDate": "February 23, 2017"
+        }]
 }

@@ -1,0 +1,11 @@
+<md-card flex flex-gt-xs="20"ng-repeat="game in games">
+    <img src="http://placehold.it/150x150" class="md-card-image">
+   <md-card-content>
+     <h2>{{game.title}}</h2>
+     <p>{{game.vendor}}</p>
+   </md-card-content>
+   <div class="md-actions" layout="row" layout-align="end center">
+     <md-button>Save</md-button>
+     <md-button>View</md-button>
+   </div>
+</md-card>

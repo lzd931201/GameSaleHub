@@ -11,6 +11,7 @@ app.set('dummyData', dummyData);
 
 app.use(express.static('app/public'));
 app.use(require('./routes/index'));
+app.use(require('./routes/api'));
 
 app.locals.siteTitle='Game Sales Hub';
 
