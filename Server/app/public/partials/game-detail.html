@@ -1,3 +1,12 @@
 <div>
-    hello
+    <h1>{{game.title}}</h1>
+    <h3>{{game.developer}}</h3>
+    <p>
+        Available Language:
+        <ul>
+            <li ng-repeat="language in game.language">{{language}}</li>
+        </ul>
+    </p>
+    <p>Release Date: {{game.releaseDate}}</p>
+    <md-button class="md-raised" ui-sref="home">Back to Home</md-button>
 </div>

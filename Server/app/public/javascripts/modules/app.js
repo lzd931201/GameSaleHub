@@ -15,18 +15,18 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
     .state('home', {
         url: '/',
         views: {
-            'toolbar@': {
+            'toolbar': {
                 templateUrl: '/partials/toolbar.html'
             },
-            'content@': {
+            'content': {
                 templateUrl: '/partials/game-card.html'
             }
         }
     })
     .state('gameDetail', {
-        url: 'detail',
+        url: '/detail',
         params: {
-          game: null  
+          game: null
         },
         views: {
             'toolbar@': {
