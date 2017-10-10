@@ -4,7 +4,7 @@ const mongoClient = require('mongodb').MongoClient;
 
 var db;
 
-mongoClient.connect('mongodb://USERNAME:PASSWORD@ds135594.mlab.com:35594/gamesaleshub_test', (err, database) => {
+mongoClient.connect('mongodb://hotdogicnuser:hotdog94@ds135594.mlab.com:35594/gamesaleshub_test', (err, database) => {
    if (err) return console.log(err);
    db = database;
 });

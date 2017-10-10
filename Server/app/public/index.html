@@ -14,10 +14,31 @@
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
 </head>
 <body layout="column" ng-app="GameSalesHubIndex" ng-cloak ng-controller="IndexCtrl as index">
+
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '124576451511989',
+          cookie     : true,
+          xfbml      : true,
+          version    : 'v2.10'
+        });
+        FB.AppEvents.logPageView();
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
     <div ui-view="toolbar"></div>
 
     <div class="container" layout="row" flex>
-
         <md-sidenav md-is-locked-open="$mdMedia('gt-sm')" class="md-whiteframe-4dp">
             <div class="container" layout="grid">
                 <md-list-item>
