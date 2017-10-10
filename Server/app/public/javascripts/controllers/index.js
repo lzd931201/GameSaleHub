@@ -1,6 +1,6 @@
 var app = angular.module('GameSalesHubIndex');
 
-app.controller('IndexCtrl', ['$scope', '$http', 'GameDataService', function ($scope, $http, GameDataService) {
+app.controller('IndexCtrl', ['$scope', '$http', 'GameDataService', '$mdSidenav', function ($scope, $http, GameDataService, $mdSidenav) {
     this.message = 'Game Sales Hub';
     // var controller = this;
     // var games = [];
@@ -19,6 +19,9 @@ app.controller('IndexCtrl', ['$scope', '$http', 'GameDataService', function ($sc
         .then(function(response) {
             $scope.games = response.data;
         });
+    this.toggleSidenav = function() {
+      $mdSidenav('indexSidenav').toggle();
+    };
     // this.games = GameDataService.games;
     console.log(this.games);
 }]);

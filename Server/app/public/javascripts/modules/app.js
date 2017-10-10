@@ -18,6 +18,9 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
             'toolbar': {
                 templateUrl: '/partials/toolbar.html'
             },
+            'sidenav': {
+                templateUrl: 'partials/sidenav.html'
+            },
             'content': {
                 templateUrl: '/partials/game-card.html'
             }

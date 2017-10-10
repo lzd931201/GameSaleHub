@@ -38,15 +38,11 @@
 
     <div ui-view="toolbar"></div>
 
+
     <div class="container" layout="row" flex>
-        <md-sidenav md-is-locked-open="$mdMedia('gt-sm')" class="md-whiteframe-4dp">
-            <div class="container" layout="grid">
-                <md-list-item>
-                    <md-button aria-label="button 1">
-                        BUTTON1
-                    </md-button>
-                </md-list-item>
-            </div>
+        <md-sidenav md-is-locked-open="$mdMedia('gt-sm')" class="md-sidenav-left md-whiteframe-4dp" md-component-id="indexSidenav">
+            <div ui-view="sidenav" flex></div>
+
         </md-sidenav>
         <md-content id="content" flex>
             <div class='md-padding' layout="row" layout-wrap>

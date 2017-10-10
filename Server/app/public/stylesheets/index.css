@@ -23,3 +23,7 @@
   transition: all 400ms ease-out 50ms;
   border-width: medium;
 }
+
+.gameCard {
+    min-width: 350px;
+}

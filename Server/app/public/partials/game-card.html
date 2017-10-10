@@ -1,11 +1,19 @@
-<div  layout="row" layout-wrap>
-    <md-card flex flex-gt-xs="20"ng-repeat="game in games" ng-controller="GameCardCtrl as ctrl">
-        <img src="http://placehold.it/150x150" class="md-card-image">
+<div layout="row" layout-wrap>
+    <md-card class="gameCard" ng-repeat="game in games" ng-controller="GameCardCtrl as ctrl">
+       <img src="http://placehold.it/150x150" class="md-card-image">
        <md-card-content>
          <h2>{{game.title}}</h2>
-         <p>{{game.vendor}}</p>
+         <p>{{game.developer}}</p>
          {{ctrl.setTab($index);}}
        </md-card-content>
+       <!-- <md-card-title>
+           <span class="md-headline">{{game.title}}</span>
+           <span class="md-subhead">{{game.developer}}</span>
+           <md-card-title-media>
+               <div class="md-media-lg card-media"></div>
+           </md-card-title-media>
+       </md-card-title>
+       {{ctrl.setTab($index);}} -->
        <div class="md-actions" layout="row" layout-align="end center">
          <md-button>Save</md-button>
          <md-button ui-sref="gameDetail({game:ctrl.game})">View</md-button>
