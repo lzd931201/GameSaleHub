@@ -1,6 +1,13 @@
-<div layout="row" layout-wrap>
-    <md-card class="gameCard" ng-repeat="game in games" ng-controller="GameCardCtrl as ctrl">
-       <img src="http://placehold.it/150x150" class="md-card-image">
+<div layout="row" layout-wrap layout-xs="column">
+    <md-card class="gameCard" ng-repeat="game in games" ng-controller="GameCardCtrl as ctrl" flex-xs="80">
+       <!-- <img src="http://placehold.it/150x150" class="md-card-image"> -->
+       <md-card-title>
+           <md-card-title-media>
+               <div class="md-media-lg card-media">
+                   <img src="http://placehold.it/150x150">
+               </div>
+           </md-card-title-media>
+       </md-card-title>
        <md-card-content>
          <h2>{{game.title}}</h2>
          <p>{{game.developer}}</p>
