@@ -1,12 +1,45 @@
 <div>
     <h1>{{game.title}}</h1>
-    <h3>{{game.developer}}</h3>
-    <p>
-        Available Language:
-        <ul>
-            <li ng-repeat="language in game.language">{{language}}</li>
-        </ul>
-    </p>
-    <p>Release Date: {{game.releaseDate}}</p>
-    <md-button class="md-raised" ui-sref="home">Back to Home</md-button>
+     <md-divider ></md-divider>
+     <md-grid-list
+        md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="6"
+        md-row-height-gt-md="1:1" md-row-height="2:2"
+        md-gutter="12px" md-gutter-gt-sm="8px" >
+
+
+
+        <md-grid-tile class = "Game_grid"
+          md-rowspan="1" md-colspan="1" md-colspan-sm="1" md-colspan-xs="1">
+          <div class = "Game_detail">
+            <img src="http://placehold.it/150x150" class="md-card-image">
+          </div>
+        </md-grid-tile>
+
+
+        <md-grid-tile class = "Game_grid"
+              md-colspan-gt-md="5" md-rowspan="2" md-colspan-md="3" md-colspan-sm="1" md-colspan-xs="1"
+              layout-align = "center end">
+            <div class="Game_detail" layout="row" layout-fill style="min-width: 400px;" md-whiteframe="3" flex-sm="45" flex-gt-sm="35" flex-gt-md="25" layout layout-align="center center">
+                <md-content>
+                <md-list-item class="md-3-line">
+                  <div class="md-list-item-text" layout="column">
+
+                    <h3>Game Developer:{{game.developer}}</h3>
+                    <p>
+                      Available Language:
+                      <ul>
+                        <li ng-repeat="language in game.language">{{language}}</li>
+                      </ul>
+                    </p>
+                    <p>Release Date: {{game.releaseDate}}</p>
+                    <md-button class="md-raised" ui-sref="home">Back to Home</md-button>
+                  </div>
+                </md-list-item>
+              </md-content>
+
+            </md-whiteframe>
+        </md-grid-tile>
+
+  </md-grid-list>
+
 </div>
